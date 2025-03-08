@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="#222">
+
+        <TextView
+            android:id="@+id/app_title"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="0dp"
+            android:textSize="32sp"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/automow_demo" />
+
+        <TextView
+            android:id="@+id/app_desc"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="100dp"
+            android:textSize="18sp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:textColor="#DDD"
+            android:text="@string/app_desc" />
+
+        <TextView
+            android:id="@+id/timer_text"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="90dp"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_rectangle"
+            android:text="@string/timer0" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="250dp"
+            android:layout_height="110dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UselessParent">
+
+            <ImageButton
+                android:id="@+id/start_button"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/play_icon"
+                android:contentDescription="@string/start"
+                android:background="@drawable/rounded_rectangle_green"
+                android:padding="20dp"
+                android:scaleType="fitCenter"/>
+
+            <ImageButton
+                android:id="@+id/pause_button"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/pause_icon"
+                android:contentDescription="@string/pause"
+                android:background="@drawable/rounded_rectangle_orange"
+                android:padding="20dp"
+                android:layout_alignParentStart="true"
+                android:scaleType="fitCenter"/>
+
+            <ImageButton
+                android:id="@+id/stop_button"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/stop_icon"
+                android:contentDescription="@string/stop"
+                android:background="@drawable/rounded_rectangle_red"
+                android:padding="20dp"
+                android:layout_alignParentEnd="true"
+                android:scaleType="fitCenter"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/status_text"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_rectangle"
+            android:text="@string/dash" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
