@@ -1,0 +1,19 @@
+MOTOR_PINS:
+    RIGHT_SIDE: 
+        PWM_PIN: 
+          PIN_NUMBER: 32
+        DIRECTION_PINS:
+            BACK: 
+              PIN_NUMBER: 37
+            FRONT: 
+              PIN_NUMBER: 35
+    LEFT_SIDE: 
+        PWM_PIN: 
+          PIN_NUMBER: 33
+        DIRECTION_PINS:
+            BACK: 
+              PIN_NUMBER: 36
+            FRONT: 
+              PIN_NUMBER: 38
+POWER_CONTROL_PIN: 11
+MOWER_MOTOR_PIN: 22
